@@ -1,16 +1,12 @@
 // components/Hello.tsx
 import React from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import Toast from './src/Toast/Toast';
 
-export interface Props {
-  name: string;
-  enthusiasmLevel?: number;
-}
-
-const App: React.FC<Props> = (props) => {
+const App: React.FC = () => {
   return (
     <View style={styles.root}>
-      <Text>Just a hello</Text>
+      <Toast type="success" message="This is just a sample message." />
       <View style={styles.button}>
         <Button title="toast" onPress={() => console.log('Clicked')}>
           Toast
@@ -25,11 +21,12 @@ const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
     alignSelf: 'center',
+    marginTop: 10
   },
   button: {
     flex: 1,
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
 
 export default App;
