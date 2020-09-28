@@ -8,7 +8,7 @@ type Props = {
   /** Toast message */
   message: string;
 };
-
+/** Toast component */
 const Toast: React.FC<Props> = (props) => {
   const { type, message } = props;
 
