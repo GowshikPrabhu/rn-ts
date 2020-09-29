@@ -1,4 +1,4 @@
-// components/Hello.tsx
+// App.tsx
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import Toast from './src/Toast/Toast';
@@ -16,7 +16,6 @@ const App: React.FC = () => {
   );
 };
 
-// styles
 const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
